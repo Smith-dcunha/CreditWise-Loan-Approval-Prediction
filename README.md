@@ -2,6 +2,8 @@
 
 CreditWise is an end-to-end machine learning application for predicting loan approval using applicant financial, demographic, employment, and credit information.
 
+🚀 **[Live Demo — CreditWise](https://creditwise-smith.streamlit.app)**
+
 The project includes data preprocessing, exploratory data analysis, feature engineering, model comparison, and an interactive Streamlit dashboard.
 
 ## Overview

@@ -1,56 +1,77 @@
 # CreditWise — Loan Approval Prediction System
 
-An end-to-end supervised machine learning project for predicting loan approval using applicant financial and demographic data.
+CreditWise is an end-to-end machine learning application for predicting loan approval using applicant financial, demographic, employment, and credit information.
+
+The project includes data preprocessing, exploratory data analysis, feature engineering, model comparison, and an interactive Streamlit dashboard.
 
 ## Overview
 
 CreditWise analyzes loan application data and applies machine learning classification techniques to predict whether a loan application is likely to be approved.
 
-The project covers the complete data science workflow, from data loading and exploratory analysis to feature engineering, model training, and evaluation.
+The project follows a complete machine learning workflow:
+
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Model training
+- Model evaluation
+- Model comparison
+- Loan approval prediction
+- Interactive Streamlit dashboard
 
 ## Key Features
 
-* Data loading and preprocessing using Pandas and NumPy
-* Exploratory Data Analysis (EDA)
-* Data visualization using Matplotlib and Seaborn
-* Feature engineering and preprocessing
-* Binary classification for loan approval prediction
-* Model training using:
+- Data preprocessing using Pandas and NumPy
+- Exploratory Data Analysis and visualization
+- Feature engineering
+- Binary loan approval classification
+- Comparison of multiple machine learning models
+- Gaussian Naive Bayes as the final prediction model
+- Model evaluation using Accuracy, Precision, Recall, and F1-Score
+- Correlation analysis using heatmaps
+- Interactive Streamlit dashboard
+- Loan approval prediction based on user-provided applicant information
 
-  * K-Nearest Neighbors (KNN)
-  * Logistic Regression
-  * Naive Bayes
-* Model evaluation using Precision, Recall, F1-Score and Accuracy
-* Correlation analysis using a correlation heatmap
+## Machine Learning Models
+
+The following classification models were evaluated:
+
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Gaussian Naive Bayes
+
+Gaussian Naive Bayes was selected as the final model for the CreditWise prediction application.
 
 ## Dataset
 
 The dataset contains loan application information including:
 
-* Applicant income
-* Co-applicant income
-* Credit score
-* Existing loans
-* DTI ratio
-* Savings
-* Collateral value
-* Loan amount
-* Loan term
-* Employment status
-* Education level
-* Property area
-* Loan purpose
-* Other applicant attributes
+- Applicant income
+- Co-applicant income
+- Credit score
+- Existing loans
+- DTI ratio
+- Savings
+- Collateral value
+- Loan amount
+- Loan term
+- Employment status
+- Education level
+- Property area
+- Loan purpose
+- Other applicant attributes
 
 ## Tech Stack
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Seaborn**
-* **Scikit-learn**
-* **Jupyter Notebook**
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Joblib
+- Jupyter Notebook
+- Streamlit
 
 ## Project Workflow
 
@@ -60,22 +81,28 @@ The dataset contains loan application information including:
 4. Data Visualization
 5. Feature Engineering
 6. Train-Test Split
-7. Model Training
-8. Model Evaluation
-9. Comparison of Classification Models
+7. Feature Scaling and Encoding
+8. Model Training
+9. Model Evaluation
+10. Model Comparison
+11. Streamlit Application Development
 
 ## Project Structure
 
 ```text
 CreditWise-Loan-Approval-Prediction/
 │
+├── app.py
+├── train_model.py
 ├── credit_wise.ipynb
 ├── loan_approval_data.csv
+│
+├── naive_bayes_model.pkl
+├── scaler.pkl
+├── onehot_encoder.pkl
+├── feature_columns.pkl
+├── label_encoder.pkl
+│
+├── requirements.txt
+├── .gitignore
 └── README.md
-```
-
-## Author
-
-**Smith Dcunha**
-
-B.E. Artificial Intelligence & Data Science
